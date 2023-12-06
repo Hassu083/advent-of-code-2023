@@ -7,7 +7,7 @@ _, source = lines[0].split(':')
 source = list(map(int, source.strip().split(' ')))
 sources = [(source[i],source[i+1]) for i in range(0, len(source), 2)]
 
-print(sources)
+
 i = 1
 while i<n:
     i += 2
@@ -37,7 +37,7 @@ while i<n:
                 # unoverlapped region
                 # if source_start != start_overlap:
                 #     before_start = source_start
-                #     before_range = s_map_start-before_start+1
+                #     before_range = s_map_start-before_start
                 #     sources.append((before_start, before_range))
 
                 # if end_overlap != source_end:
