@@ -15,16 +15,13 @@ def power(card):
     counter = Counter(card)
     
     j = counter['1']
-    if j:
+    if j and j != 5:
         counter.pop('1')
-        if j == 5:
-            counter['1'] = 5
-        else:
-            maxcount = ('',0)
-            for key, val in counter.items():
-                if maxcount[1]<val:
-                    maxcount = (key, val)
-            counter[maxcount[0]] += j
+        maxcount = ('',0)
+        for key, val in counter.items():
+            if maxcount[1]<val:
+                maxcount = (key, val)
+        counter[maxcount[0]] += j
 
     n = len(counter)
         
