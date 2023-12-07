@@ -18,7 +18,7 @@ def power(card):
     if j:
         counter.pop('1')
         if j == 5:
-            counter['A'] = 5
+            counter['1'] = 5
         else:
             maxcount = ('',0)
             for key, val in counter.items():
