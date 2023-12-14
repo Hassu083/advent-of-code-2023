@@ -57,9 +57,8 @@ for t in range(cycles):
     hash_grid= str(grid)
     if hash_grid in seen:
         print(seen[hash_grid],t)
-        cycles = cycles - seen[hash_grid]
-        ans = all_in_cycle[seen[hash_grid]-1:][(cycles%(t-seen[hash_grid]))]
-        # ans = all_in_cycle[seen[hash_grid]:][(cycles%(t-seen[hash_grid]))-1]
+        cycles = cycles - seen[hash_grid] - 1
+        ans = all_in_cycle[seen[hash_grid]:][(cycles%(t-seen[hash_grid]))]
         break
     seen[hash_grid] = t 
     all_in_cycle.append(deepcopy(grid))
