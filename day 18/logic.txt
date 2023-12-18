@@ -1,0 +1,15 @@
+polygon area is given by,
+A = summition((xi-x(i+1))(yi+y(i+1)))
+
+According to picks theorem,
+A = i + b/2 - 1   
+
+where,
+    i is number of points inside the polygon.
+    b is number of points at polygon edges.
+
+i = A - b/2 + 1  
+
+i + b = A - b/2 + b + 1
+
+total_points = A + b/2 + 1
