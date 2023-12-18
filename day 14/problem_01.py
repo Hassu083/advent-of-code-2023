@@ -17,3 +17,8 @@ for i, row in enumerate(lines):
             ansForRow[j] -= 1
 
 print(ans)
+
+
+
+
+

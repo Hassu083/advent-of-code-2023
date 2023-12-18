@@ -67,3 +67,6 @@ for t in range(cycles):
 
 
 print(score(ans))
+
+
+
