@@ -29,4 +29,3 @@ for (x1, y1), (x2, y2) in zip(points[:-1],points[1:]):
     area += ((y1+y2)*(x1-x2))
 
 print(abs(area)//2+perimeter//2+1)
-
