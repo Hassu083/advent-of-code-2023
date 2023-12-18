@@ -139,6 +139,23 @@ for i, j in inside:
 f = open("Day 10//out.txt", "w")
 for line in game:
     f.write("".join(line)+"\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
  
 
 

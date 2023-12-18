@@ -40,3 +40,6 @@ for i in range(len(game)):
                 visited = {(newi,newy)}
                 dfs(newi,newy,1,visited)
             
+
+
+            
